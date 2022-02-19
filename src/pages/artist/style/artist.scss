@@ -1,0 +1,269 @@
+@import "../../../style/mixin.scss";
+
+.artist {
+  .artistCon {
+    margin-top: 30px;
+    .artistWrap {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      .asidewrap {
+        flex: 1;
+        .aside {
+          width: 80%;
+          margin: 0 auto;
+          .sideHeader {
+            display: flex;
+            justify-content: space-between;
+            .profilePic {
+              display: flex;
+              align-items: center;
+              a {
+                img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  cursor: pointer;
+                }
+              }
+              p {
+                font-size: 18px;
+                margin-left: 20px;
+              }
+            }
+            .buttons {
+              img {
+                &:nth-child(1) {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
+          .sideBody {
+            margin: 20px 0;
+            .artPic {
+              img {
+                width: 100%;
+                height: 55vh;
+                object-fit: contain;
+              }
+            }
+            .heart {
+              display: flex;
+              justify-content: flex-end;
+              cursor: pointer;
+              span {
+                margin-right: 10px;
+              }
+            }
+          }
+          .artMenuCon1 {
+            .artMenu {
+              display: flex;
+              justify-content: space-evenly;
+              flex-wrap: wrap;
+              a {
+                width: 30%;
+                margin-right: 2px;
+                img {
+                  width: 100%;
+                  border-radius: 13px;
+                }
+              }
+            }
+          }
+          .artMenuCon {
+            display: none;
+            .artMenu {
+              width: 90%;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-evenly;
+
+              a {
+                width: 30%;
+                margin: 10px;
+                cursor: pointer;
+                text-align: center;
+                img {
+                  border-radius: 13px;
+                  width: 100%;
+                  max-width: 100px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .artbox {
+        flex: 1;
+        .artTxt {
+          width: 80%;
+          margin: 0 auto;
+          .artTitle {
+            font-size: 24px;
+            margin-bottom: 15px;
+          }
+          .artDesc {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+          }
+          .commentsCon {
+            margin-top: 30px;
+            height: 40vh;
+            overflow: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+              width: 3px;
+            }
+            &::-webkit-scrollbar-thumb {
+              background-color: rgba(225, 232, 230, 0.5);
+              border-radius: 50px;
+              &:hover {
+                background-color: rgba(220, 185, 96, 0.5);
+              }
+            }
+
+            .comment {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 15px;
+
+              .commentBox {
+                .commentHead {
+                  a {
+                    display: flex;
+                    align-items: center;
+                    margin: 5px 0;
+                    img {
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                      cursor: pointer;
+                      margin-right: 10px;
+                    }
+                  }
+                }
+              }
+              .commentDelete {
+                cursor: pointer;
+              }
+            }
+          }
+          .commentForm {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            input {
+              background: rgb(225, 220, 220);
+              width: 70%;
+              border-radius: 20px;
+              font-size: 16px;
+              padding: 5px 15px;
+              box-sizing: border-box;
+            }
+            .commentBtn {
+              width: 25%;
+              background: #000;
+              color: #fff;
+              font-size: 16px;
+              padding: 5px 15px;
+              border-radius: 20px;
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .artist {
+    .artistCon {
+      .artistWrap {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 0 70px 0;
+        .asidewrap {
+          .aside {
+            position: relative;
+            .sideHeader {
+              display: flex;
+              justify-content: space-between;
+              .profilePic {
+                display: flex;
+                a {
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+
+            .artMenuCon1 {
+              display: none;
+            }
+            .artMenuCon {
+              display: block;
+              width: 100%;
+              position: fixed;
+              bottom: -40vh;
+              left: 0%;
+              transition: 0.3s ease-in-out;
+              .menulinkMenu {
+                text-align: center;
+                button {
+                  background: #000;
+                  color: #fff;
+                  border-radius: 10px 10px 0 0;
+                  padding: 8px;
+                  font-size: 18px;
+                }
+              }
+
+              .artMenu {
+                height: 40vh;
+                overflow-y: scroll;
+                background: #383535;
+                border-radius: 12px 12px 0 0;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                  width: 3px;
+                }
+
+                &::-webkit-scrollbar-track {
+                  background-color: rgba(0, 0, 0, 0.85); /*스크롤바 트랙 색상*/
+                }
+                a {
+                  width: 30%;
+                  img {
+                    max-width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+}
+
+@include desktop {
+}

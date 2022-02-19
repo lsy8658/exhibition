@@ -1,0 +1,59 @@
+@import "../../../style/mixin.scss";
+.headerCon {
+  position: relative;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.979);
+  .header {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+    z-index: 999;
+    img {
+      width: 70px;
+    }
+    h1 {
+      font-weight: normal;
+      font-size: 40px;
+    }
+  }
+}
+
+@include mobile {
+  .headerCon {
+    .header {
+      width: 100%;
+      padding: 40px 0;
+      text-align: center;
+      img {
+        width: 70px;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@include tablet {
+}
+
+@include desktop {
+  .headerCon {
+    .header {
+      display: flex;
+      width: 80%;
+      padding: 40px 0;
+      margin: 0 auto;
+      text-align: center;
+      img {
+        width: 50px;
+        margin-right: 20px;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 40px;
+      }
+    }
+  }
+}

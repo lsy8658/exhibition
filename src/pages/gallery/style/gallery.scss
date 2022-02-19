@@ -1,0 +1,67 @@
+@import "../../../style/mixin.scss";
+.gallery {
+  .searchForm {
+    display: block !important;
+  }
+  width: 100%;
+  .galleryContainer {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .artwork {
+      overflow: hidden;
+      max-width: 50%;
+      margin: 0px 0 20px 0;
+      cursor: pointer;
+      img {
+        border-radius: 20px;
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .gallery {
+    .galleryContainer {
+      justify-content: center;
+      .artwork {
+        max-width: 100%;
+        max-height: 70vh;
+        img {
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .gallery {
+    .galleryContainer {
+      .artwork {
+        max-width: 45%;
+        max-height: 70vh;
+        img {
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .gallery {
+    .galleryContainer {
+      justify-content: space-evenly;
+      .artwork {
+        // min-width: 2%;
+        max-width: 22%;
+        img {
+        }
+      }
+    }
+  }
+}

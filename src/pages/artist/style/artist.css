@@ -1,0 +1,328 @@
+@charset "UTF-8";
+.artist .artistCon {
+  margin-top: 30px;
+}
+
+.artist .artistCon .artistWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.artist .artistCon .artistWrap .asidewrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideHeader .profilePic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideHeader .profilePic a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideHeader .profilePic p {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideHeader .buttons img:nth-child(1) {
+  margin-right: 10px;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideBody {
+  margin: 20px 0;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideBody .artPic img {
+  width: 100%;
+  height: 55vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideBody .heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .sideBody .heart span {
+  margin-right: 10px;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon1 .artMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon1 .artMenu a {
+  width: 30%;
+  margin-right: 2px;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon1 .artMenu a img {
+  width: 100%;
+  border-radius: 13px;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon {
+  display: none;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu a {
+  width: 30%;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu a img {
+  border-radius: 13px;
+  width: 100%;
+  max-width: 100px;
+}
+
+.artist .artistCon .artistWrap .artbox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .artTitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .artDesc {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon {
+  margin-top: 30px;
+  height: 40vh;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon::-webkit-scrollbar {
+  width: 3px;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon::-webkit-scrollbar-thumb {
+  background-color: rgba(225, 232, 230, 0.5);
+  border-radius: 50px;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(220, 185, 96, 0.5);
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon .comment .commentBox .commentHead a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px 0;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon .comment .commentBox .commentHead a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentsCon .comment .commentDelete {
+  cursor: pointer;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentForm {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentForm input {
+  background: #e1dcdc;
+  width: 70%;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.artist .artistCon .artistWrap .artbox .artTxt .commentForm .commentBtn {
+  width: 25%;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .artist .artistCon .artistWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 70px 0;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside {
+    position: relative;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .sideHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .sideHeader .profilePic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .sideHeader .profilePic a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    cursor: pointer;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon1 {
+    display: none;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon {
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: -40vh;
+    left: 0%;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .menulinkMenu {
+    text-align: center;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .menulinkMenu button {
+    background: #000;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 8px;
+    font-size: 18px;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu {
+    height: 40vh;
+    overflow-y: scroll;
+    background: #383535;
+    border-radius: 12px 12px 0 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu::-webkit-scrollbar {
+    width: 3px;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.85);
+    /*스크롤바 트랙 색상*/
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu a {
+    width: 30%;
+  }
+  .artist .artistCon .artistWrap .asidewrap .aside .artMenuCon .artMenu a img {
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=artist.css.map */

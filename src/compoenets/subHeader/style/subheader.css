@@ -1,0 +1,109 @@
+.subHeader {
+  width: 100%;
+}
+
+.subHeader .headerWrap {
+  width: 90%;
+  margin: 0 auto;
+  padding: 25px 0;
+  text-align: center;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subHeader .headerWrap img {
+  width: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.subHeader .headerWrap .headerSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subHeader .headerWrap .headerSide h1 {
+  margin-left: 20px;
+}
+
+.subHeader .headerWrap .menuBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 80%;
+}
+
+.subHeader .headerWrap .menuBtn .searchForm {
+  margin-right: 20px;
+  width: 100%;
+}
+
+.subHeader .headerWrap .menuBtn .searchForm input {
+  width: 80%;
+  text-align: center;
+  background: #e8e7e7;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 20px;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.subHeader .headerWrap .menuBtn .searchForm .searchIcon {
+  background: none;
+}
+
+.subHeader .headerWrap .menuBtn .searchForm .searchIcon .searchImg {
+  width: 25px;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .subHeader .headerWrap .menuBtn .searchForm {
+    margin-right: 20px;
+    width: 100%;
+  }
+  .subHeader .headerWrap .menuBtn .searchForm input {
+    padding: 8px;
+    width: 80%;
+    font-size: 13px;
+  }
+  .subHeader .headerWrap .menuBtn .searchForm .searchIcon {
+    background: none;
+  }
+  .subHeader .headerWrap .menuBtn .searchForm .searchIcon .searchImg {
+    width: 25px;
+  }
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .subHeader .headerWrap .menuBtn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subHeader .headerWrap .menuBtn {
+    width: 30%;
+  }
+  h1 {
+    margin-left: 40px !important;
+  }
+}
+/*# sourceMappingURL=subheader.css.map */

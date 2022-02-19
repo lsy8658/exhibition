@@ -1,0 +1,98 @@
+@import "../../../style/mixin.scss";
+
+.subHeader {
+  width: 100%;
+  .headerWrap {
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
+    text-align: center;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 20px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+    }
+    .headerSide {
+      display: flex;
+      h1 {
+        margin-left: 20px;
+      }
+    }
+    .menuBtn {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 80%;
+      .searchForm {
+        margin-right: 20px;
+        width: 100%;
+        input {
+          width: 80%;
+          text-align: center;
+          background: rgb(232, 231, 231);
+          font-size: 15px;
+          padding: 5px;
+          margin-right: 20px;
+          border-radius: 20px;
+          box-sizing: border-box;
+        }
+        .searchIcon {
+          background: none;
+          .searchImg {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .subHeader {
+    .headerWrap {
+      .menuBtn {
+        .searchForm {
+          margin-right: 20px;
+          width: 100%;
+          input {
+            padding: 8px;
+            width: 80%;
+            font-size: 13px;
+          }
+          .searchIcon {
+            background: none;
+            .searchImg {
+              width: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include tablet {
+  .subHeader {
+    .headerWrap {
+      .menuBtn {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .subHeader {
+    .headerWrap {
+      .menuBtn {
+        width: 30%;
+      }
+    }
+  }
+  h1 {
+    margin-left: 40px !important;
+  }
+}

@@ -1,0 +1,166 @@
+.upload {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+
+.upload .uploadContainer {
+  padding-top: 30px;
+}
+
+.upload .uploadContainer .side {
+  margin-bottom: 30px;
+}
+
+.upload .uploadContainer .side .item .uploadTxt {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.upload .uploadContainer .side .item .uploadTxt .uploadBox {
+  width: 100%;
+  margin: 0 auto;
+  height: 50vh;
+  background: #ddd7d7;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upload .uploadContainer .side .item .uploadTxt .uploadBox p {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.upload .uploadContainer .side .item .imgbox {
+  width: 100%;
+  margin: 0 auto;
+  height: 50vh;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.upload .uploadContainer .side .item .imgbox img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.upload .uploadContainer .side .item .filebox {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload .uploadContainer .side .item .filebox button {
+  background: #bce4c3;
+  font-size: 18px;
+  width: 50%;
+  padding: 8px 0;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.upload .uploadContainer .side .item .filebox button:hover {
+  background: #75b680;
+  color: #fff;
+}
+
+.upload .uploadContainer .side .item .filebox label {
+  cursor: pointer;
+  background: #bce4c3;
+  display: inline-block;
+  width: 100%;
+  font-size: 18px;
+  padding: 8px 0;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.upload .uploadContainer .side .item .filebox label:hover {
+  background: #75b680;
+  color: #fff;
+}
+
+.upload .uploadContainer .side .item .filebox .inputFile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt .inputBox {
+  margin: 0px 0 30px 0;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt .inputBox textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  height: 40vh;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt .submitBtn {
+  background: #f8c596;
+  font-size: 18px;
+  width: 100%;
+  padding: 8px 0;
+  border-radius: 15px;
+}
+
+.upload .uploadContainer .textWrap .uploadTxt .submitBtn:hover {
+  background: #e49449;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .upload .uploadContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 80px;
+  }
+  .upload .uploadContainer .side {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .upload .uploadContainer .side .uploadTxt {
+    width: 80%;
+  }
+  .upload .uploadContainer .textWrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .upload .uploadContainer .textWrap .uploadTxt {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=upload.css.map */

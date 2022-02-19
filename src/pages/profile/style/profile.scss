@@ -1,0 +1,202 @@
+@import "../../../style/mixin.scss";
+
+.profileContainer {
+  form {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .aside {
+    flex: 1;
+    .profilePic {
+      .imgs {
+        text-align: center;
+        position: relative;
+        & img:nth-child(1) {
+          width: 80%;
+          height: 40vh;
+          max-width: 500px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+        .fileUpload {
+          position: absolute;
+          bottom: 0;
+          right: 10%;
+          label {
+            cursor: pointer;
+            img {
+              height: auto;
+              border-radius: 0px;
+              width: 30px !important;
+            }
+          }
+          input {
+            width: 1px;
+            height: 1px;
+          }
+        }
+      }
+      p {
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+    p {
+    }
+  }
+  .modify {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    .userInfo {
+      width: 80%;
+      margin: 0 auto;
+      button {
+        border: none;
+        background: #719e84;
+        color: #fff;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+        padding: 7px 0;
+        border-radius: 20px;
+        margin-bottom: 30px;
+      }
+      .inputbox {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        label {
+          width: 20%;
+          font-size: 18px;
+        }
+        input {
+          width: 80%;
+          text-align: center;
+          font-size: 18px;
+          max-width: 500px;
+          padding: 5px 0;
+          border-radius: 20px;
+          border: 1px solid #d4d1d1;
+        }
+      }
+      .passwordModal {
+        .modalBg {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          width: 100%;
+          height: 100vh;
+          background: rgba(100, 98, 98, 0.7);
+        }
+        .passwordBox {
+          position: absolute;
+          top: 45%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 50%;
+          max-width: 500px;
+          padding: 30px;
+          border-radius: 20px;
+          background: #fff;
+          .inputbox {
+            input {
+              width: 100%;
+            }
+          }
+          .btns {
+            display: flex;
+            justify-content: space-between;
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .profileContainer {
+    form {
+      padding-top: 20px;
+      flex-direction: column;
+    }
+
+    .aside {
+      .profilePic {
+        .imgs {
+          & img:nth-child(1) {
+          }
+          label {
+            img {
+              width: 25px !important;
+            }
+          }
+        }
+      }
+      p {
+      }
+    }
+    .modify {
+      .userInfo {
+        .inputbox {
+        }
+        .passwordModal {
+          .passwordBox {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include tablet {
+  .profileContainer {
+    .aside {
+      .profilePic {
+      }
+      p {
+      }
+    }
+    .modify {
+      .userInfo {
+        .inputbox {
+        }
+        .passwordBox {
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .profileContainer {
+    .aside {
+      .profilePic {
+        .imgs {
+          & img:nth-child(1) {
+            height: 60vh;
+          }
+        }
+        p {
+        }
+      }
+      .modify {
+        .userInfo {
+          .inputbox {
+          }
+          .passwordBox {
+          }
+        }
+      }
+    }
+  }
+}

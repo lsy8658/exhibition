@@ -1,0 +1,171 @@
+.profileContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.profileContainer .aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.profileContainer .aside .profilePic .imgs {
+  text-align: center;
+  position: relative;
+}
+
+.profileContainer .aside .profilePic .imgs img:nth-child(1) {
+  width: 80%;
+  height: 40vh;
+  max-width: 500px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileContainer .aside .profilePic .imgs .fileUpload {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+.profileContainer .aside .profilePic .imgs .fileUpload label {
+  cursor: pointer;
+}
+
+.profileContainer .aside .profilePic .imgs .fileUpload label img {
+  height: auto;
+  border-radius: 0px;
+  width: 30px !important;
+}
+
+.profileContainer .aside .profilePic .imgs .fileUpload input {
+  width: 1px;
+  height: 1px;
+}
+
+.profileContainer .aside .profilePic p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.profileContainer .modify {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.profileContainer .modify .userInfo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profileContainer .modify .userInfo button {
+  border: none;
+  background: #719e84;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  padding: 7px 0;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.profileContainer .modify .userInfo .inputbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.profileContainer .modify .userInfo .inputbox label {
+  width: 20%;
+  font-size: 18px;
+}
+
+.profileContainer .modify .userInfo .inputbox input {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  max-width: 500px;
+  padding: 5px 0;
+  border-radius: 20px;
+  border: 1px solid #d4d1d1;
+}
+
+.profileContainer .modify .userInfo .passwordModal .modalBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(100, 98, 98, 0.7);
+}
+
+.profileContainer .modify .userInfo .passwordModal .passwordBox {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.profileContainer .modify .userInfo .passwordModal .passwordBox .inputbox input {
+  width: 100%;
+}
+
+.profileContainer .modify .userInfo .passwordModal .passwordBox .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.profileContainer .modify .userInfo .passwordModal .passwordBox .btns button {
+  width: 100%;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .profileContainer form {
+    padding-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .aside .profilePic .imgs label img {
+    width: 25px !important;
+  }
+  .profileContainer .modify .userInfo .passwordModal .passwordBox {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .profileContainer .aside .profilePic .imgs img:nth-child(1) {
+    height: 60vh;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

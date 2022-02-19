@@ -1,0 +1,126 @@
+.container .aside {
+  display: none;
+}
+
+.container .search {
+  width: 100%;
+}
+
+.container .search h2 {
+  text-align: center;
+}
+
+.container .search .searchBox p:nth-child(2) span {
+  font-size: 28px;
+  color: #dc9452;
+}
+
+.container .search .searchBox p {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container .search .searchForm {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .search .searchForm .inputBox {
+  margin: 30px 0;
+}
+
+.container .search .searchForm .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.container .search .searchForm .searchButton {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.container .search .searchForm .searchButton:hover {
+  background: #dc9452;
+  color: #000;
+}
+
+.container .search .links {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container .search .links a {
+  display: inline-block;
+  font-size: 16px;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .search {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .search {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: calc(100vh - 130px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .aside {
+    display: block !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .aside img {
+    width: 100%;
+    max-width: 600px;
+  }
+  .container .search {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-bottom: 100px;
+  }
+  .container .search h2 {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+  }
+  .container .search .searchForm {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .container .search .searchForm .inputBox {
+    margin: 40px 0;
+  }
+}
+/*# sourceMappingURL=search.css.map */

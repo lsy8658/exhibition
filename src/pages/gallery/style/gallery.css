@@ -1,0 +1,66 @@
+.gallery {
+  width: 100%;
+}
+
+.gallery .searchForm {
+  display: block !important;
+}
+
+.gallery .galleryContainer {
+  width: 90%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery .galleryContainer .artwork {
+  overflow: hidden;
+  max-width: 50%;
+  margin: 0px 0 20px 0;
+  cursor: pointer;
+}
+
+.gallery .galleryContainer .artwork img {
+  border-radius: 20px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media (min-width: 335px) and (max-width: 757px) {
+  .gallery .galleryContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .gallery .galleryContainer .artwork {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .gallery .galleryContainer .artwork {
+    max-width: 45%;
+    max-height: 70vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery .galleryContainer {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .gallery .galleryContainer .artwork {
+    max-width: 22%;
+  }
+}
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,113 @@
+.container .aside {
+  display: none;
+}
+
+.container .register {
+  width: 100%;
+}
+
+.container .register h2 {
+  display: none;
+}
+
+.container .register .registerForm {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container .register .inputBox {
+  margin: 30px 0;
+}
+
+.container .register .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  padding: 10px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.container .register .loginButton {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  background: #000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.container .register .loginButton:hover {
+  background: #dc9452;
+}
+
+.container .register .links {
+  width: 80%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .register .links a {
+  font-size: 16px;
+  color: #000;
+}
+
+.container .register .links a:hover {
+  color: #dc9452;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    height: calc(100vh - 130px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .container .aside {
+    display: block !important;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .aside img {
+    width: 100%;
+    max-width: 600px;
+  }
+  .container .register {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .container .register h2 {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+  }
+  .container .register .links {
+    max-width: 400px;
+  }
+  .container .register .registerForm {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  .container .register .registerForm .inputBox {
+    margin: 40px 0;
+  }
+}
+/*# sourceMappingURL=register.css.map */

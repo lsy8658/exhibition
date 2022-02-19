@@ -1,0 +1,86 @@
+.mainBg {
+  background: url("../../../../public/assets/images/main/circlesbg.png");
+  background-size: 650px;
+  background-repeat: no-repeat;
+  background-position: bottom -265px right -150px;
+  height: 100vh;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.mainBg .main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.mainBg .main .links .link {
+  font-size: 30px;
+  margin: 40px 0;
+}
+
+.mainBg .main .links .link a {
+  color: #000;
+  padding: 5px 0;
+}
+
+.mainBg .main .links .link a:hover {
+  border-bottom: 2px solid orange;
+}
+
+.mainBg .main .links .link button {
+  color: #000;
+  background: none;
+  padding: 5px 0;
+  font-size: 30px;
+}
+
+.mainBg .main .links .link button:hover {
+  border-bottom: 2px solid orange;
+}
+
+@media (min-width: 758px) and (max-width: 1023px) {
+  .mainBg {
+    background-size: 700px;
+  }
+  .mainBg .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mainBg .main .links .link {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainBg {
+    background-size: 900px;
+  }
+  .mainBg .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainBg .container .aside {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    text-align: center;
+  }
+  .mainBg .container .aside img {
+    max-width: 55%;
+  }
+  .mainBg .container .main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .mainBg .container .main .links .link {
+    font-size: 40px;
+    margin: 10% 0;
+  }
+  .mainBg .container .main .links .link button {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

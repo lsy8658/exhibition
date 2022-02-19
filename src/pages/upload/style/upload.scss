@@ -1,0 +1,150 @@
+@import "../../../style/mixin.scss";
+.upload {
+  width: 90%;
+  margin: 0 auto 20px;
+  .uploadContainer {
+    padding-top: 30px;
+    .side {
+      margin-bottom: 30px;
+      .item {
+        .uploadTxt {
+          width: 90%;
+          margin: 0 auto;
+          .uploadBox {
+            width: 100%;
+
+            margin: 0 auto;
+            height: 50vh;
+            background: #ddd7d7;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            p {
+              width: 100%;
+              text-align: center;
+              display: inline-block;
+            }
+          }
+        }
+        .imgbox {
+          width: 100%;
+          margin: 0 auto;
+
+          height: 50vh;
+          border-radius: 30px;
+          overflow: hidden;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .filebox {
+          text-align: center;
+          button {
+            background: #bce4c3;
+            font-size: 18px;
+            width: 50%;
+            padding: 8px 0;
+            margin-top: 30px;
+            border-radius: 15px;
+            &:hover {
+              background: #75b680;
+              color: #fff;
+            }
+          }
+
+          label {
+            cursor: pointer;
+            background: #bce4c3;
+            display: inline-block;
+            width: 100%;
+            font-size: 18px;
+            padding: 8px 0;
+            margin-top: 30px;
+            border-radius: 15px;
+            &:hover {
+              background: #75b680;
+              color: #fff;
+            }
+          }
+          position: relative;
+          overflow: hidden;
+          .inputFile {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .textWrap {
+      .uploadTxt {
+        width: 90%;
+        margin: 0 auto;
+        .inputBox {
+          margin: 0px 0 30px 0;
+          input {
+            width: 100%;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+          }
+          textarea {
+            width: 100%;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            height: 40vh;
+          }
+        }
+        .submitBtn {
+          background: #f8c596;
+          font-size: 18px;
+          width: 100%;
+          padding: 8px 0;
+
+          border-radius: 15px;
+          &:hover {
+            background: #e49449;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+}
+
+@include tablet {
+}
+
+@include desktop {
+  .upload {
+    .uploadContainer {
+      display: flex;
+      padding-top: 80px;
+      .side {
+        flex: 1;
+        .uploadTxt {
+          width: 80%;
+        }
+      }
+      .textWrap {
+        flex: 1;
+        .uploadTxt {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
