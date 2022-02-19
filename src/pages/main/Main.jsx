@@ -22,7 +22,7 @@ const Main = ({ logout, user }) => {
               <Link to={"/"}>My Gallery</Link>
             </li> */}
             <li className="link">
-              <Link to={"/profile"}>Profile</Link>
+              <Link to={"/upload"}>Upload</Link>
             </li>
             <li className="link">
               <Link to={"/profile"}>Profile</Link>
