@@ -18,8 +18,11 @@ const Main = ({ logout, user }) => {
             <li className="link">
               <Link to={"/gallery"}>Gallery</Link>
             </li>
-            <li className="link">
+            {/* <li className="link">
               <Link to={"/"}>My Gallery</Link>
+            </li> */}
+            <li className="link">
+              <Link to={"/profile"}>Profile</Link>
             </li>
             <li className="link">
               <Link to={"/profile"}>Profile</Link>
