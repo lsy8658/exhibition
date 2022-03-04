@@ -193,19 +193,17 @@ const Artist = ({ state }) => {
               <div className="sideHeader">
                 <div className="profilePic">
                   <Link to={"/"}>
-                    {artist !== [] ? (
-                      artist.map((user, index) => {
-                        return (
-                          <img
-                            key={index}
-                            src={`https://sy-exhibition-app.herokuapp.com/image/${user.profilePic}`}
-                            alt=""
-                          />
-                        );
-                      })
-                    ) : (
-                      <img src={`/assets/images/icon/profile2.png`} alt="" />
-                    )}
+                    {artist.map((user, index) => {
+                      return user.profilePic ? (
+                        <img
+                          key={index}
+                          src={`https://sy-exhibition-app.herokuapp.com/image/${user.profilePic}`}
+                          alt=""
+                        />
+                      ) : (
+                        <img src={`/assets/images/icon/profile2.png`} alt="" />
+                      );
+                    })}
                   </Link>
                   <p>{postData.userId}</p>
                 </div>
