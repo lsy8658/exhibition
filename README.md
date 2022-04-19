@@ -1,6 +1,10 @@
 
 <h1 style="text-align:center">🎨 Memory Gallery 🎨</h1>
 아티스트의 인스타그램
+</br></br>
+  <a href="https://lsy-project.tistory.com/" target="_blank">
+    Memory Gallery 보러가기!
+  </a>
 </br>
 </br>
 </br>
