@@ -53,7 +53,7 @@ const Profile = ({ state, modify_start, modify_success, modify_failure }) => {
       updatedUser.profilePic = filename;
       try {
         await axios.post(
-          "https://sy-exhibition-app.herokuapp.com/api/upload",
+          "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/upload",
           data
         );
       } catch (err) {
@@ -63,7 +63,8 @@ const Profile = ({ state, modify_start, modify_success, modify_failure }) => {
 
     try {
       const res = await axios.put(
-        `https://sy-exhibition-app.herokuapp.com/api/user/` + userInfo._id,
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/user/` +
+          userInfo._id,
         updatedUser
       );
       console.log(res.data);
@@ -89,7 +90,7 @@ const Profile = ({ state, modify_start, modify_success, modify_failure }) => {
                     src={
                       userInfo.profilePic === ""
                         ? "/assets/images/icon/profile.png"
-                        : `https://sy-exhibition-app.herokuapp.com/image/${userInfo.profilePic}`
+                        : `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${userInfo.profilePic}`
                     }
                     alt=""
                   />

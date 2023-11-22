@@ -16,7 +16,7 @@ const Modify = ({ state }) => {
     const render = async () => {
       try {
         const res = await axios.get(
-          `https://sy-exhibition-app.herokuapp.com/api/post/modify/${param}`
+          `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/post/modify/${param}`
         );
         const postData = res.data;
 
@@ -43,7 +43,7 @@ const Modify = ({ state }) => {
       newPost.photo = filename;
       try {
         await axios.post(
-          "https://sy-exhibition-app.herokuapp.com/api/upload",
+          "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/upload",
           data
         );
       } catch (err) {
@@ -52,7 +52,7 @@ const Modify = ({ state }) => {
     }
     try {
       await axios.put(
-        `https://sy-exhibition-app.herokuapp.com/api/post/${param}`,
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/post/${param}`,
         newPost
       );
       window.location.replace("/gallery");
@@ -77,7 +77,7 @@ const Modify = ({ state }) => {
                       <div className="uploadTxt">
                         <div className="imgbox">
                           <img
-                            src={`https://sy-exhibition-app.herokuapp.com/image/${item.photo}`}
+                            src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${item.photo}`}
                             alt=""
                           />
                         </div>

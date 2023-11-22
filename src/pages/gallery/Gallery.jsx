@@ -11,7 +11,7 @@ const Gallery = () => {
     const imageLoad = async () => {
       try {
         const res = await axios.get(
-          "https://sy-exhibition-app.herokuapp.com/api/post/"
+          "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/post/"
         );
         searchArt == null ? setImages(res.data) : setImages(searchArt);
       } catch (err) {
@@ -28,7 +28,7 @@ const Gallery = () => {
         {images.map((img, index) => (
           <Link to={`/${img._id}`} key={index} className="artwork">
             <img
-              src={`https://sy-exhibition-app.herokuapp.com/image/${img.photo}`}
+              src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${img.photo}`}
               alt=""
             />
           </Link>

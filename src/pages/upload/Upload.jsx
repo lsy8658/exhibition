@@ -25,7 +25,7 @@ const Upload = ({ state }) => {
       newPost.photo = filename;
       try {
         await axios.post(
-          "https://sy-exhibition-app.herokuapp.com/api/upload",
+          "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/upload",
           data
         );
       } catch (err) {
@@ -34,7 +34,7 @@ const Upload = ({ state }) => {
     }
     try {
       await axios.post(
-        "https://sy-exhibition-app.herokuapp.com/api/post/",
+        "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/post/",
         newPost
       );
       alert("작품이 성공적으로 업로드 되었습니다.");

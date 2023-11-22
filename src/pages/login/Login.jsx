@@ -20,7 +20,7 @@ const Login = ({ state, login_start, login_success, login_failure }) => {
     try {
       login_start();
       const res = await axios.post(
-        "https://sy-exhibition-app.herokuapp.com/api/auth/login",
+        "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/auth/login",
         user
       );
       login_success({ user: res.data });

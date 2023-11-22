@@ -26,7 +26,7 @@ const Artist = ({ state }) => {
     const result = async () => {
       try {
         const res = await axios.get(
-          `https://sy-exhibition-app.herokuapp.com/api/artist/${artistId}`
+          `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/${artistId}`
         );
         console.log(res.data.comments);
         setHeart(res.data.likes);
@@ -36,7 +36,7 @@ const Artist = ({ state }) => {
         setLike(likes);
         // -------------------------------------------------------------
         const data = await axios.get(
-          `https://sy-exhibition-app.herokuapp.com/api/artist/userId/${artistId}`,
+          `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/userId/${artistId}`,
           artistId
         );
         const user = data.data.user;
@@ -67,7 +67,7 @@ const Artist = ({ state }) => {
     const render = async () => {
       try {
         const res = await axios.get(
-          `https://sy-exhibition-app.herokuapp.com/api/artist/${artistId}`
+          `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/${artistId}`
         );
         setPostData(res.data);
 
@@ -86,7 +86,7 @@ const Artist = ({ state }) => {
     const arts = async () => {
       try {
         const res = await axios.get(
-          "https://sy-exhibition-app.herokuapp.com/api/artist",
+          "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist",
           data
         );
 
@@ -116,7 +116,7 @@ const Artist = ({ state }) => {
   const deleteHandler = async () => {
     try {
       const res = await axios.delete(
-        `https://sy-exhibition-app.herokuapp.com/api/artist/${artistId}`
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/${artistId}`
       );
       window.location.replace("/gallery");
       console.log(res);
@@ -135,7 +135,7 @@ const Artist = ({ state }) => {
 
     try {
       const res = await axios.put(
-        `https://sy-exhibition-app.herokuapp.com/api/artist/${artistId}`,
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/${artistId}`,
         data
       );
       setHeart(res.data.likes);
@@ -156,7 +156,7 @@ const Artist = ({ state }) => {
 
     try {
       const res = await axios.put(
-        `https://sy-exhibition-app.herokuapp.com/api/artist/comment/${artistId}`,
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/comment/${artistId}`,
         data
       );
       window.location.reload();
@@ -173,7 +173,7 @@ const Artist = ({ state }) => {
     };
     try {
       const res = await axios.put(
-        `https://sy-exhibition-app.herokuapp.com/api/artist/delete/${artistId}`,
+        `https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/artist/delete/${artistId}`,
         data
       );
       console.log(res);
@@ -197,7 +197,7 @@ const Artist = ({ state }) => {
                       return user.profilePic ? (
                         <img
                           key={index}
-                          src={`https://sy-exhibition-app.herokuapp.com/image/${user.profilePic}`}
+                          src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${user.profilePic}`}
                           alt=""
                         />
                       ) : (
@@ -223,7 +223,7 @@ const Artist = ({ state }) => {
                 <div className="artPic">
                   {postData.photo ? (
                     <img
-                      src={`https://sy-exhibition-app.herokuapp.com/image/${postData.photo}`}
+                      src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${postData.photo}`}
                       alt=""
                     />
                   ) : (
@@ -248,7 +248,7 @@ const Artist = ({ state }) => {
                   {arts.map((art, index) => (
                     <Link to={`/${art._id}`} key={index}>
                       <img
-                        src={`https://sy-exhibition-app.herokuapp.com/image/${art.photo}`}
+                        src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${art.photo}`}
                         alt=""
                       />
                     </Link>
@@ -272,7 +272,7 @@ const Artist = ({ state }) => {
                   {arts.map((art, index) => (
                     <Link to={`/${art._id}`} key={index}>
                       <img
-                        src={`https://sy-exhibition-app.herokuapp.com/image/${art.photo}`}
+                        src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/${art.photo}`}
                         alt=""
                       />
                     </Link>
@@ -294,7 +294,7 @@ const Artist = ({ state }) => {
                           <Link to={"/"}>
                             {/* {users.userId === item.userId ? (
                               <img
-                                src={`https://sy-exhibition-app.herokuapp.com/image/}`}
+                                src={`https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/image/}`}
                                 alt=""
                               />
                             ) : (

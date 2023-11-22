@@ -21,7 +21,7 @@ const Register = () => {
     };
     try {
       await axios.post(
-        "https://sy-exhibition-app.herokuapp.com/api/auth/register",
+        "https://port-0-exhibition-server-5mk12alp9ivd2d.sel5.cloudtype.app/api/auth/register",
         user
       );
       alert("회원가입되었습니다.");
